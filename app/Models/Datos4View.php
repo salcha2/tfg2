@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Datos4 extends Model
+class Datos4View extends Model
 {
     use HasFactory;
 
-    protected $table = 'datos4'; // Especificar el nombre de la tabla si es diferente al nombre convencional
+    protected $table = 'datos4_view'; // Especificar el nombre de la tabla si es diferente al nombre convencional
 
     protected $fillable = [
         'result_vulnerability',
@@ -40,7 +40,9 @@ class Datos4 extends Model
         'usuario',
         'nombre',
         'descripcion',
-        'fecha_registro'
+        'fecha_registro',
+        'latitud',
+        'longitud',
     ];
 
     protected $casts = [

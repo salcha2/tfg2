@@ -22,7 +22,9 @@ Route::group([
 ], function (Router $router) {
 
     $router->get('/', 'HomeController@index')->name('home');
-    $router->resource('datos5s', Datos5Controller::class);
+    //$router->resource('datos5s', Datos5Controller::class);
     $router->resource('demo/users', UserController::class);
+    $router->resource('edificios', Datos4Controller::class);
+
 
 });
